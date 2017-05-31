@@ -32,6 +32,64 @@ body {
   line-height: 3rem;
 }
 
+/*-------------My css----------------*/
+
+div.greet_page{
+  background-color:#000;
+  width:100%;
+  height:100vh;
+  position:absolute;
+  top:0;
+  z-index:1;
+}
+div.b-container{
+  width:inherit;
+  background-color:inherit;
+}
+div.top-b,.right-b,.bot-b,.left-b{
+  /*border:1px solid #fff;*/
+  position:absolute;
+  z-index:20;
+  background-color:#fff;
+}
+.top-b{
+  top:0;
+  width:100%;
+  height:35px;
+  margin-top:1px;
+}
+.right-b{
+  right:0;
+  top:0;
+  height:calc(100% - 1px);
+  width:35px;
+  margin-top:1px;
+}
+.bot-b{
+  bottom:0;
+  width:100%;
+  height:35px;
+}
+.left-b{
+  left:0;
+  top:0;
+  height:calc(100% - 1px);
+  width:35px;
+  margin-top:1px;
+}
+
+div.text{
+  color:#c3c;
+  font-size: 5em;
+  margin:7% auto;
+  /*border:1px solid #fff;*/
+  text-align: center;
+}
+div.text p{
+  text-align: center;
+}
+
+
 /* Custom page footer */
 .footer {
   padding-top: 1.5rem;

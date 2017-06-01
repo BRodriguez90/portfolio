@@ -1,14 +1,11 @@
 .browserupgrade {
-  margin: 0.2em 0;
+  /*margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
+  padding: 0.2em 0;*/
 }
-
-/* Space out content a bit */
-body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+body{
+  background-color:#000;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -44,7 +41,7 @@ div.greet_page{
 }
 div.b-container{
   width:inherit;
-  background-color:inherit;
+  background-color:inherit
 }
 div.top-b,.right-b,.bot-b,.left-b{
   /*border:1px solid #fff;*/
@@ -56,11 +53,11 @@ div.top-b,.right-b,.bot-b,.left-b{
   top:0;
   width:100%;
   height:35px;
-  margin-top:1px;
+  /*margin-top:1px;*/
 }
 .right-b{
   right:0;
-  top:0;
+  top:0; 
   height:calc(100% - 1px);
   width:35px;
   margin-top:1px;
@@ -81,15 +78,28 @@ div.top-b,.right-b,.bot-b,.left-b{
 div.text{
   color:#c3c;
   font-size: 5em;
-  margin:7% auto;
+  /*margin:7% auto;*/
+  padding-top:7%;
   /*border:1px solid #fff;*/
+  height:100vh;
   text-align: center;
+}
+div.text object{
+  width:70%;
+  /*float:right;*/
+  text-align: center;
+}
+div.text object embed{
+  margin-left:0;
 }
 div.text p{
   text-align: center;
 }
 
-
+section{
+width:100%;
+height:100vh;
+}
 /* Custom page footer */
 .footer {
   padding-top: 1.5rem;

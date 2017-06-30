@@ -3,11 +3,11 @@
 	 xml:space="preserve">
 	<defs> 
 		<style type="text/css">
-			.st0{fill:none;stroke:#FFF;stroke-miterlimit:5;}
+			.st0{fill:none;stroke:#475db1;stroke-miterlimit:5;}
 			.st0{
 				stroke-dasharray:1500;
 				stroke-dashoffset:0;
-				animation:dash 7s linear forwards;
+				animation:dash 6500ms linear forwards;
 			}
 			@keyframes dash{
 				from{stroke-dashoffset:1500;}

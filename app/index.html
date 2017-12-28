@@ -12,6 +12,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -86,19 +87,26 @@
     <div class="greet_page">
       <!--<div class="b-container">-->
        
-        <div class="text">
+        <div class="text-hero">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-md-3"></div>
+              <div class="col-md-6 int">
                 <div class="my-intro">
-                  <p>Hi there, my name is Ben and I'm a web designer and developer based in Central Florida.</p>
+                  <!--<p>Hi there, my name is Ben and I'm a web designer and developer based in Central Florida. I design things up and code them down.</p>-->
+                  <p class="animated fadeIn">Web Designer&lt;/&gt;Developer</p>
+                  <p id="sub-p"class="sub-p"></p>
+                  
                   </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-md-3"></div>
+              <!--<div class="col-md-6 int">
+                <div class="sil-wrapper">
                 <object class="my-silh">
-                  <embed src="images/s52.svg" alt="Silhouette" width="70%" height="70%">
+                  <embed src="images/s52.svg" alt="Silhouette" width="" height="">
                 </object>
-              </div>
+                </div>
+              </div>-->
             </div>
           </div>
       </div>
@@ -110,34 +118,50 @@
 
       </section>
       <section id="work">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12">
+              <h2 class="text-center">My Work</h2>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6">
+                  <div class="projectwrap">
+                    <div class="project">
+                      <img class="project-img img-responsive" src="images/project_ever_animal.png" alt="Ever Animal Project">
+                    </div>  
+                  </div>
+                </div>
+            <div class="col-sm-6">
                 <div class="projectwrap">
-                  <div class="project" style="background-image:url(images/ever_animal.jpg)">
-                    <div class="project-overlay"></div>
+                  <div class="project">
+                    <h3 class="project_title">Ever Animal</h3>
+                   <p class="description">A small web application that uses the Petfinder API and Google Maps API. It allows the user to search for animal breeds and plots their shelter locations on a google map. Clicking on a marker pops up more information and contact details for the animal.</p>
+                   <p class="tags">
+                    <ul class="tag_list">
+                      <li class="s_tags">HTML</li>
+                      <li class="s_tags">CSS</li>
+                      <li class="s_tags">Bootstrap</li>
+                      <li class="s_tags">jQuery</li>
+                      <li class="s_tags">API</li>
+                     </ul>
+                    </p>
                   </div>
                 </div> 
             </div>
-            <div class="col-md-4">
+            
+            <!--<div class="col-md-4">
               <div class="projectwrap">
                 <div class="project" style="background-image:url(images/ever_animal.jpg)">
                   <div class="project-overlay"></div>
                 </div>  
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="projectwrap">
-                <div class="project" style="background-image:url(images/ever_animal.jpg)">
-                  <div class="project-overlay"></div>
-                </div>  
-              </div>
-            </div>
+            </div>-->
           </div>
         </div>
         </section>
         <section id="contact">
-
+            
         </section>
     </main>
 
@@ -162,6 +186,8 @@
     <script src="/bower_components/tether/dist/js/tether.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/animejs/anime.js"></script>
+    <script src="/bower_components/letteringjs/jquery.lettering.js"></script>
+    <script src="/bower_components/textillate/jquery.textillate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

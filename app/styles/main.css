@@ -31,6 +31,7 @@ body{
   border-bottom: .05rem solid #e5e5e5;
 }
 
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -39,6 +40,10 @@ body{
 }
 
 /*-------------My css----------------*/
+hr{
+  background-color:rgba(34, 8, 65, 0.377);
+ 
+}
 div.right{
   padding-right:0px !important;
   padding-left:0px!important;
@@ -57,6 +62,7 @@ nav#nav-bar{
   width:100%;
   height:inherit;
   background-color:rgba(0, 0, 20, 0.842);
+  box-shadow:1px 0px 10px 1px #1d1d1d;
 }
 nav#nav-bar ul{
   /*padding:1em;*/
@@ -148,7 +154,7 @@ span.line3{
 
 nav#overlay-nav{
   /*background-color:rgba(2, 2, 75, 0.7);*/
-  background-color:rgb(1, 17, 69);
+  background-color:rgb(46, 62, 116);
   width:100%;
   position:fixed;
   height:100vh;
@@ -255,7 +261,6 @@ div.text-hero{
   text-align: left;
   /*background:linear-gradient(160deg, #290f5c, #20014b);*/
   background: url('../images/overlay.png'), url('../images/laptop-deskC.jpg');
-  /*background: url('../images/overlay.png'),url('../images/glass1.jpg');*/
   /*background:linear-gradient(160deg,#32067c,#150233);*/
   /*rgba(54, 22, 143,3);*/
   background-size:cover;
@@ -344,6 +349,16 @@ width:100%;
 min-height: 100vh;
 padding-top:100px;
 }
+/*--------------------
+----------------------
+    ABOUT SECTION
+----------------------
+--------------------*/
+section#about p{
+  font-size:1.3em;
+  line-height: 2.4rem
+}
+
 
 /*--------------------
 ----------------------
@@ -354,9 +369,14 @@ padding-top:100px;
 section#work{
   background-color:rgb(240, 240, 240)
 }
-section#work h2{
-  padding-bottom:80px;
+section h2{
+  margin-bottom:30px;
+  padding-bottom:20px;
+  border-bottom:2px solid rgb(127, 158, 226);
   font-size:2.5em;
+  width:35%;
+  margin-left:auto;
+  margin-right:auto;
 }
 p.description{
   line-height: 30px;
@@ -366,18 +386,19 @@ ul.tag_list{
   padding:0;
 }
 li.s_tags{
-  /*border:1px solid rgb(218, 230, 58);*/
-  font-size:0.9em;
+  /*border:1px solid rgb(81, 119, 228);*/
+  font-size:0.8em;
   list-style: none;
-  border-radius:2px;
-  display:inline;
+  border-radius:3px;
+  display:inline-block;
   margin:0px 5px 10px 0px;
-  color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
   /*box-shadow:inset 1px 1px 1px #e5e5e5;*/
   box-shadow:0px 0px 5px #777;
   padding:5px 10px;
-  background-color:rgba(223, 28, 28, 0.71);
-  background-color:rgba(81, 119, 228, 0.52);
+  /*background-color:rgba(223, 28, 28, 0.71);*/
+  /*background-color:rgba(81, 119, 228, 0.52);*/
+  background-color:rgba(23, 23, 158, 0.842);
 }
 div.projectwrap img.project-img{
   width:100%;
@@ -402,10 +423,14 @@ div.project{
   right: 10px;
   bottom: 10px;
   left: 10px;*/
-  height:212px;
+  /*height:212px;*/
   background-size: cover;
  /*background-position: center center;*/
  /*transition:all 2s ease-in;*/
+ margin:50px 0;
+}
+h3.project_title{
+  color:#cb3727;
 }
 /* Custom page footer */
 .footer {
@@ -467,6 +492,17 @@ div.project{
   }
   div.project{
     height:200px;
+  }
+  h3.project_title{
+    padding-top:15px;
+    text-align:center;
+  }
+
+  ul.tag_list{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    display:inline-block;
   }
   nav#nav-bar{
     display:none;

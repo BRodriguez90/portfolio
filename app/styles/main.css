@@ -347,7 +347,7 @@ div.text-hero object{
 section{
 width:100%;
 min-height: 100vh;
-padding-top:100px;
+/*padding-top:100px;*/
 }
 /*--------------------
 ----------------------
@@ -355,8 +355,9 @@ padding-top:100px;
 ----------------------
 --------------------*/
 section#about p{
-  font-size:1.3em;
-  line-height: 2.4rem
+  font-size:2em;
+  line-height: 4.5rem;
+  text-align:center;
 }
 
 

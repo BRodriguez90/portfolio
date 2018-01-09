@@ -260,16 +260,16 @@ div.text-hero{
   height:421px;/*421px*/
   text-align: left;
   /*background:linear-gradient(160deg, #290f5c, #20014b);*/
-  background: url('../images/overlay.png'), url('../images/laptop-deskC.jpg');
+  background: linear-gradient( rgba(0, 0, 20, 0.774), rgba(0, 0, 20, 0.774)), url('../images/laptop-deskC.jpg');
   /*background:linear-gradient(160deg,#32067c,#150233);*/
   /*rgba(54, 22, 143,3);*/
   background-size:cover;
   background-position:70% -140px;
-  background-repeat:no-repeat;
+  /*background-repeat:no-repeat;*/
   
 }
 div.int{
-  /*padding:0 0;*/
+  padding:0 0;
 }
 
 /*div.text object embed{
@@ -297,11 +297,11 @@ div.text-hero p{
 }
 .my-intro p:first-child{
   line-height: 2.2em;
-  font-size:1.3em;
+  font-size:1.15em;
   /*padding:0 0 0 15%;*/
   /*background-color:#fff;*/
   /*padding:52px 50px;*/
-  padding:85px 0px 30px 3px !important;
+  padding:0px 0px 30px 3px !important;
   margin-bottom:0 !important;
   color:#fff !important;
 }
@@ -344,16 +344,54 @@ div.text-hero object{
   /*height:550px;*/
   height:421px;
 }
+
 section{
 width:100%;
-min-height: 100vh;
-/*padding-top:100px;*/
+min-height:100vh;
+padding-top:56px;
+border-bottom:2px solid #cfd5ed;
 }
+section#hero_section{
+  min-height:68vh;
+  border-bottom:none;
+}
+/*--------------------
+----------------------
+    HERO SECTION
+----------------------
+--------------------*/
+h2.name{
+  font-size:1.8em;
+  color:white;
+  padding-top:25px;
+}
+/*--------------------
+----------------------
+    WHAT I DO SECTION
+----------------------
+--------------------*/
+section#what_i_do{
+  min-height:0;
+  padding-top:0;
+}
+section#what_i_do p{
+  font-size: 1.8em;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+section#what_i_do img{
+ width:100%;
+ /*top:130px;*/
+}
+
 /*--------------------
 ----------------------
     ABOUT SECTION
 ----------------------
 --------------------*/
+
+section#about{
+  padding-top:120px;
+}
 section#about p{
   font-size:2em;
   line-height: 4.5rem;
@@ -368,7 +406,8 @@ section#about p{
 --------------------*/
 
 section#work{
-  background-color:rgb(240, 240, 240)
+  background-color:rgb(240, 240, 240);
+  padding-top:120px;
 }
 section h2{
   margin-bottom:30px;
@@ -381,6 +420,9 @@ section h2{
 }
 p.description{
   line-height: 30px;
+}
+div.tags{
+  margin-top:20px;
 }
 
 ul.tag_list{
@@ -433,6 +475,67 @@ div.project{
 h3.project_title{
   color:#cb3727;
 }
+
+
+/*--------------------
+----------------------
+    CONTACT SECTION
+----------------------
+--------------------*/
+section#contact img{
+  width:100%;
+  height:100%;
+}
+div.right-contact,.left-contact{
+  margin-top:40px;
+  height:400px;
+  /*border:1px solid black;*/
+}
+div.right-contact{
+  background-color:rgb(31,32,54);
+  color:white;
+}
+.cont-h3{
+  padding-top:50px;
+  border-bottom:1px solid white;
+  width:80%;
+  margin:0 auto;
+  padding-bottom:10px;
+}
+.contact-info{
+  padding-top:25px;
+  font-size:1.4em;
+}
+.c-info-wrap{padding-top:70px;}
+
+.c-info-wrap h4{border-bottom:1px solid white; width:70%; margin:0 auto; padding-bottom:10px;}
+
+ul.social-list{
+  padding:0;
+  width:100%;
+  margin:0 auto;
+}
+li.social{
+  display:inline-table;
+  padding:0 20px;
+}
+li.social a{
+  display:table-cell;
+  vertical-align: middle;
+}
+.c-info-wrap a{
+  padding-top:15px;
+  display:block;
+  color:white;
+}
+
+i{
+  font-size:2em;
+  vertical-align: middle;
+}
+
+
+
 /* Custom page footer */
 .footer {
   padding-top: 1.5rem;
@@ -482,18 +585,16 @@ h3.project_title{
 
 @media only screen and (max-width:48em){
   button#nav-button{
-    display:block;
+    display:none;
   }
   .container-fluid{
     padding-left:0px;
     padding-right:0px;
   }
-  div.projectwrap{
-    padding:10px 7px;
-  }
-  div.project{
-    height:200px;
-  }
+  div.projectwrap{padding:10px 7px;}
+  
+  div.project{height:200px;}
+  
   h3.project_title{
     padding-top:15px;
     text-align:center;
@@ -506,21 +607,65 @@ h3.project_title{
     display:inline-block;
   }
   nav#nav-bar{
-    display:none;
+    display:block;
+  }
+  nav#nav-bar li{
+    padding:0 15px 0 0;
+    margin:0 auto;
+    width:100%;
+  }
+  nav#nav-bar li a:hover{
+    color:rgb(127, 158, 226);
   }
   div.text-hero{
-    background: url('../images/overlay.png'), url('../images/laptop-mobile.jpg');
+    background: linear-gradient( rgba(0, 0, 20, 0.774), rgba(0, 0, 20, 0.774)), url('../images/laptop-mobile.jpg');
     background-repeat:no-repeat;
     height:320px;
   }
+  h2.name{
+    font-size:1em;
+    width:90%;
+    margin-bottom:0;
+    padding-top:20px;
+  }
   .my-intro p:first-child{
     /*line-height: 2.2em !important;*/
-    font-size:0.7em;
+    font-size:0.6em;
     padding:20px 0px 30px 3px !important;
   }
   .sub-p{
-    font-size:0.6em;
+    font-size:0.5em;
   }
+  
+  section#about{
+    min-height:70vh;
+    padding-top:30px;
+  }
+  section#about p{
+    font-size:1.3em;
+    line-height: 1.5em;
+    text-align:left;
+  }
+  section#work{
+    padding-top:30px;
+    min-height:70vh;
+  }
+  .project{
+    height:auto !important;
+    margin:0 !important;
+  }
+
+  .c-info-wrap{
+    padding-top:20px;
+  }
+  .right-contact,.left-contact{
+    height:420px !important;
+  }
+  i{
+    font-size: 1.6em;
+    vertical-align: middle;
+  }
+  
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 48em) {

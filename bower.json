@@ -5,9 +5,23 @@
     "bootstrap": "~4.0.0-alpha.6",
     "modernizr": "~2.8.1",
     "animejs": "^2.0.2",
-    "textillate": "^0.4.0"
+    "textillate": "^0.4.0",
+    "font-awesome": "~4.7.0",
+    "jquery-mousewheel": "^3.1.13",
+    "components-font-awesome": "^4.7.0",
+    "font-awesome-min": "^4.6.1",
+    "Ionicons": "ionicons#^2.0.1"
   },
   "overrides": {
+    "fontawesome": {
+      "main": [
+        "css/font-awesome.css",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.svg"
+      ]
+    },
     "bootstrap": {
       "main": [
         "scss/bootstrap.scss",

@@ -4,19 +4,19 @@ $(function() {
         effect: 'fadeIn' 
         } 
     });*/
-    var i = 0;
-    var txt = 'I design things up and code them down.'; //Text
-    var speed = 65; //Duration
+    let i = 0;
+    const txt = 'I design things up and code them down.'; //Text
+    let speed = 65; //Duration
     
     function typeWriter() {
       if (i < txt.length) {
-        document.getElementById("sub-p").innerHTML += txt.charAt(i);
+        document.getElementById('sub-p').innerHTML += txt.charAt(i);
        
         i++;
         setTimeout(typeWriter, speed);
       }
     }
-    $(".tags li").addClass('s_tags');
+    $('.tags li').addClass('s_tags');
 
     setTimeout(function(){
         //$('.my-intro p').fadeIn(1000);
@@ -35,5 +35,7 @@ $(function() {
     setTimeout(function(){
         //$(".my-silh embed").css("background-color","#e6e6e6");
     },6000);
-   window.addEventListener("load",typeWriter);
+
+    
+   window.addEventListener('load',typeWriter);
  });

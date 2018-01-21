@@ -100,6 +100,9 @@ nav#nav-bar ul li a{
   color:#fff;
   vertical-align:middle;
 }
+nav#nav-bar li a:hover {
+  color:rgb(127, 158, 226);
+}
 button#nav-button{
   background:none;
   border:none;

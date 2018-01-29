@@ -422,11 +422,14 @@ section#about{
 }
 section#about p{
   font-family:roboto;
-  font-size:2em;
-  line-height: 4.5rem;
-  text-align:center;
+  font-size:1.2em;
+  line-height: 2rem;
+  text-align:left;
 }
 
+#about-pic1{
+  width:100%;
+}
 
 /*--------------------
 ----------------------

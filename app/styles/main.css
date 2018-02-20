@@ -403,7 +403,7 @@ img#about-pic1{
 --------------------*/
 
 section#work{
-  background-color:rgb(240, 240, 240);
+  /*background-color:rgb(240, 240, 240);*/
   padding-top:120px;
 }
 section h1,section h2{
@@ -474,8 +474,47 @@ div.project{
 h3.project_title{
   color:#cb3727;
 }
-
-
+/*--------------------
+----------------------
+    SKILLS SECTION
+----------------------
+--------------------*/
+section#skills{
+  background-color: rgb(240, 240, 240);
+}
+.ct-series-a .ct-slice-donut,
+.ct-series-b .ct-slice-donut,
+.ct-series-c .ct-slice-donut,
+.ct-series-d .ct-slice-donut,
+.ct-series-e .ct-slice-donut,
+.ct-series-f .ct-slice-donut,
+.ct-series-g .ct-slice-donut {
+  stroke-width: 70px !important;
+}
+.ct-label{
+  fill:rgb(240, 240, 240);
+  color:rgb(240, 240, 240);
+  font-size:0.9em;
+}
+.ct-series-a .ct-slice-donut{ /*HTML*/
+  /*stroke:rgb(211, 71, 20);*/
+  stroke:#dd1317;
+}
+.ct-series-b .ct-slice-donut{ /*CSS*/
+  stroke:rgb(10, 67, 223);
+}
+.ct-series-c .ct-slice-donut{ /*JavaScript*/
+  stroke:rgb(241, 198, 54);
+}               
+.ct-series-d .ct-slice-donut{ /*jQuery*/
+  stroke:rgb(25, 114, 214);
+}
+.ct-series-e .ct-slice-donut{ /*React*/
+  stroke:rgb(97, 210, 230);
+}
+.ct-series-g .ct-slice-donut{ /*PHP*/
+  stroke:rgb(107, 92, 177);
+}
 /*--------------------
 ----------------------
     CONTACT SECTION
@@ -483,6 +522,7 @@ h3.project_title{
 --------------------*/
 section#contact{
   padding-top:100px;
+   background-color:rgb(240, 240, 240);
 }
 section#contact img{
   width:100%;

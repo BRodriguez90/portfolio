@@ -10,7 +10,9 @@
     "jquery-mousewheel": "^3.1.13",
     "components-font-awesome": "^4.7.0",
     "font-awesome-min": "^4.6.1",
-    "Ionicons": "ionicons#^2.0.1"
+    "Ionicons": "ionicons#^2.0.1",
+    "chartist": "^0.11.0",
+    "chartist-plugin-tooltip": "^0.0.18"
   },
   "overrides": {
     "fontawesome": {
@@ -33,5 +35,8 @@
   "devDependencies": {
     "chai": "^4.0.0",
     "mocha": "^3.4.2"
+  },
+  "resolutions": {
+    "chartist": "~0.9.4"
   }
 }

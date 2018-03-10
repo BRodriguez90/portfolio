@@ -16,28 +16,21 @@ $(function() {
     }
     $('.tags li').addClass('s_tags');
 
-    /*setTimeout(function(){
-        $('.my-intro p').fadeIn(1000);
-        $('.my-intro p').css('display','block');
-        $('.my-intro p:first-child').animateCss('fadeIn');
-        $('.my-silh').fadeIn(1000);
-    },200);*/
-    
-   
+    $('.nav-wrap').hover(function(){
+      $('.s-div').toggleClass('slide');
+    });
+
     $('#nav-button').click(function() {
         $('#nav-button').toggleClass('clicked');
         $('#nav-button.clicked:focus').css('outline','none');
        // $('.line1,.line2,.line3').toggleClass('line-tog');
-       
-       $('nav#mobile-nav ul').slideToggle(700);
-        
-          
+       $('nav#mobile-nav ul').slideToggle(250);
        //$('nav#mobile-nav ul').toggleClass('show-ul');
-        
     });
+
     $('nav#mobile-nav li a').click(function(){
       $('#nav-button').toggleClass('clicked');
-      $('nav#mobile-nav ul').slideToggle(700);
+      $('nav#mobile-nav ul').slideToggle(250);
     });
 
     
@@ -70,13 +63,13 @@ $(function() {
   const chart = new Chartist.Pie('.ct-chart', { 
     labels: ['HTML', 'CSS', 'JavaScript', 'jQuery','React', 'Node', 'PHP'],
     series: [
-        {meta:"Pro", value:40},
-        {meta:"Pro", value:40},
-        {meta:"Not too shabby", value:20},
-        {meta:"Not too shabby", value:20},
-        {meta:"Working on it", value:5},
-        {meta:"Working on it", value:5},
-        {meta:"Not bad", value:15}
+        {meta:'Pro', value:40},
+        {meta:'Pro', value:40},
+        {meta:'Not too shabby', value:20},
+        {meta:'Not too shabby', value:20},
+        {meta:'Working on it', value:5},
+        {meta:'Working on it', value:5},
+        {meta:'Not bad', value:15}
         /*40, 40, 20, 20, 5, 5, 15]*/
     ],
    

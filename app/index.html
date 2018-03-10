@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Ben Rodriguez Portfolio</title>
 
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="./favicon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- build:css styles/vendor.css -->
@@ -41,6 +41,17 @@
     <div class="nav-wrap">
       <div class="navbar-wrap">
         <nav id="nav-bar">
+           <!-- <h1 id="mob-h1">
+                <a href="#hero_section">&lt;Ben Rodriguez /&gt;</a>
+              </h1>-->
+
+            <a class="header-anchor" href="#hero_section">
+              <div class="head-container">
+                <div class="f-div"> &lt;</div>
+                <div class="s-div"> /&gt;</div>
+                <div class="code-name">B <span class="mirror">R</span></div>
+              </div>
+            </a> 
           <ul>
             <li>
               <a href="#what_i_do">What I Do</a>
@@ -49,7 +60,7 @@
               <a href="#about">About</a>
             </li>
             <li>
-                <a href="#skills">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
               <a href="#work">Projects</a>
@@ -60,7 +71,9 @@
           </ul>
         </nav>
         <nav id="mobile-nav">
-          <h1 id="mob-h1"><a href="#hero_section">Ben Rodriguez</a></h1>
+          <h1 id="mob-h1">
+            <a href="#hero_section">&lt;Ben Rodriguez /&gt;</a>
+          </h1>
           <ul>
             <li>
               <a href="#what_i_do">What I Do</a>
@@ -90,23 +103,11 @@
       </div>
     </div>
   </header>
-  <!--
-    <div class="b-container">
-       <div class="bars top-b">
-        </div>
-        <div class="bars right-b">
-        </div>
-        <div class="bars bot-b">
-        </div>
-        <div class="bars left-b">
-        </div>
-      </div>
-    -->
   <section id="hero_section">
     <div class="greet_page">
-      <!--<div class="b-container">-->
-
+      <div id="particles-js"></div>
       <div class="text-hero">
+
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
@@ -117,48 +118,38 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
               <div class="my-intro">
-                <!--<p>Hi there, my name is Ben and I'm a web designer and developer based in Central Florida. I design things up and code them down.</p>-->
-
                 <p class="animated fadeIn">Web Designer&lt;/&gt;Developer</p>
                 <p id="sub-p" class="sub-p"></p>
-
               </div>
             </div>
             <div class="col-md-3"></div>
-            <!--<div class="col-md-6 int">
-                <div class="sil-wrapper">
-                <object class="my-silh">
-                  <embed src="images/s52.svg" alt="Silhouette" width="" height="">
-                </object>
-                </div>
-              </div>-->
           </div>
         </div>
-
       </div>
-      <!--</div>-->
     </div>
 
   </section>
   <main>
     <section id="what_i_do">
-      <!--<h2 style="display:none;">What I do</h2>-->
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-4">
-            <img class="img-responsive" src="images/design.png" alt="Design">
-            <h4 class="text-center">Design</h4>
-            <p class="wid text-center">I enjoy designing websites that cater to their desired audience so that users will enjoy coming back every time. Whether a website needs to be redesigned or simply starting from scratch. </p>
+              <img class="img-responsive" src="images/webdesign.svg" alt="Design">
+              <h4 class="text-center">Design</h4>
+              <p class="wid text-center">I enjoy designing websites that cater to their desired audience so that users will enjoy coming back every time.
+                Whether a website needs to be redesigned or simply starting from scratch. </p>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4">
-            <img class="img-responsive" src="images/develop.png" alt="Develop">
+            <img class="img-responsive" src="images/webdevelop.svg" alt="Develop">
             <h4 class="text-center">Develop</h4>
-            <p class="wid text-center">Developing websites is where I find my passion. It's satisfying taking a design and creating the code that makes it reality, be it creating something completely new or customizing existing websites.</p>
+            <p class="wid text-center">Developing websites is where I find my passion. It's satisfying taking a design and creating the code that makes
+              it reality, be it creating something completely new or customizing existing websites.</p>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4">
-            <img class="img-responsive" src="images/maintenance.png" alt="Maintenance">
+            <img class="img-responsive" src="images/maintain.svg" alt="Maintenance">
             <h4 class="text-center">Maintain</h4>
-            <p class="wid text-center">If it's on the internet chances are it can break. I enjoy fixing any existing problems that may arise even long after a website's been developed. Nothing is truly ever 100% complete.</p>
+            <p class="wid text-center">If it's on the internet chances are it can break. I enjoy fixing any existing problems that may arise even long
+              after a website's been developed. Nothing is truly ever 100% complete.</p>
           </div>
         </div>
       </div>
@@ -169,14 +160,28 @@
           <div class="col-sm-12">
             <h2 class="text-center">About</h2>
           </div>
-          <div class="row"> 
+          <div class="row">
+
             <div class="col-sm-12 col-md-12 col-lg-4 text-center">
-                  <img id="about-pic1" class="img-fluid rounded-circle" src="images/pics/about-pic1.png" alt="photo of me">
+              <img id="about-pic1" class="img-fluid rounded-circle" src="images/pics/about-pic1.png" alt="photo of me">
             </div>
+
             <div class="col-sm-12 col-md-12 col-lg-8">
-              <p>Welcome! My name is Ben Rodriguez I'm 27 and I'm a web developer based in central Florida. I love working on existing designs and improving the quality of websites by providing clean and semantic code. I enjoy working on web apps and I'm always on the lookout for new technologies to learn that help accomplish that. I would definitely describe myself as an overall thinker and I'm always looking for ways to solve problems whenever they may arise. Learning is a never ending journey and I know that there is so much more for me to learn about web development as a whole. Check out some of my <span><a href="#work">projects</a></span> below to see what kind of work I enjoy doing and feel free to get in <span><a href="#contact">contact</a></span> with me.</p>
+              <p>Welcome! My name is
+                <strong>Ben Rodriguez</strong> I'm 27 and I'm a web developer currently based in central Florida but willing to relocate
+                for the right opportunity. I love working on existing designs and improving the quality of websites by providing
+                clean and semantic code. I enjoy working on web apps and I'm always on the lookout for new technologies to
+                learn that help accomplish that. I'm currently working on improving my skills with React, so far it's been
+                a fun process and I can't wait to keep getting better at it. I would definitely describe myself as an overall
+                thinker and I'm always looking for ways to solve problems whenever they may arise. Check out some of my
+                <span>
+                  <a href="#work">projects</a>
+                </span> below to see what kind of projects I've worked on and feel free to
+                <span>
+                  <a href="#contact">contact</a>
+                </span> me if you have a special project you'd like me to be part of.</p>
             </div>
-        
+
           </div>
         </div>
       </div>
@@ -193,10 +198,52 @@
           <div class="col-lg-6">
             <div class="ct-chart ct-perfect-fourth"></div>
           </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-2">
+                <img class="skills-svg" src="images/skills.svg" alt="front end">
+              </div>
+              <div class="col-lg-10">
+                <h4>Front End Design</h4>
+                <p class="skills-par">Experience taking static designs/templates and converting them into code to become fully functional websites.
+                  </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2">
+                <img class="skills-svg" src="images/mobile.svg" alt="responsive">
+              </div>
+              <div class="col-lg-10">
+                <h4>Responsive Design</h4>
+                <p class="skills-par">Having a mobile first mentality to create fluid and fully responsive websites that cater to multiple screen
+                  resolutions from desktop to table and mobile.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2">
+                <img class="skills-svg" src="images/seo.svg" alt="seo">
+              </div>
+              <div class="col-lg-10">
+                <h4>Search Engine Optimization (SEO)</h4>
+                <p class="skills-par">Making sure that web pages are ranking high in searches and that the target audience is being reached. Good site structure, semantic code and personalization. </p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                  <img class="skills-svg" src="images/responsive.svg" alt="interaction design">
+                </div>
+                <div class="col-lg-10">
+                  <h4>Interaction Design</h4>
+                  <p class="skills-par">Designing products to ensure that the user is able to interact with the product to accomplish their objective. </p>
+                </div>
+              </div>
+
+          </div>
+          
         </div>
-        
+
       </div>
-      
+
     </section>
     <section id="work">
       <div class="container">
@@ -299,7 +346,8 @@
             <div class="projectwrap ">
               <div class="project pwrap">
                 <h3 class="project_title">Janaki Redesign</h3>
-                <p class="description">A total site redesin as part of a school project. This is a one page website made using bootstrap. The goal was to better showcase the content by the designer in a more semantic way.</p>
+                <p class="description">A total site redesin as part of a school project. This is a one page website made using bootstrap. The goal
+                  was to better showcase the content by the designer in a more semantic way.</p>
                 <a href="/projects/jw_redesign/">View Website</a>
                 <div class="tags">
                   <ul class="tag_list">
@@ -318,6 +366,8 @@
 
     </section>
     <!-- <section id="artwork">
+
+      /**** Coming Soon ****/
     
     </section>-->
     <section id="contact">
@@ -330,7 +380,7 @@
         <div class="row">
           <div class="col-sm-6 hidden-xs-down int">
             <div class="left-contact">
-              <img src="images/code.jpg" alt="code">
+              <img src="images/code3.jpg" alt="code">
             </div>
           </div>
           <div class="col-sm-6 int">
@@ -342,10 +392,10 @@
               </div>
               <div class="row">
                 <div class="col-sm-12">
-                    <address class="contact-info text-center">
-                     <i class="ion-ios-email-outline" aria-hidden="true"></i> 
-                     <a href="mailto:#">benrdesigns@gmail.com</a>
-                    </address>
+                  <address class="contact-info text-center">
+                    <i class="ion-ios-email-outline" aria-hidden="true"></i>
+                    <a href="mailto:#">benrdesigns@gmail.com</a>
+                  </address>
                 </div>
               </div>
               <div class="c-info-wrap">
@@ -358,19 +408,19 @@
                 <div class="row text-center">
                   <ul class="social-list">
                     <li class="social" title="Linkedin">
-                        <a target="_blank" href="https://www.linkedin.com/in/ben-dev">
-                          <i class="ion-social-linkedin" aria-hidden="true"></i>
-                        </a>
+                      <a target="_blank" href="https://www.linkedin.com/in/ben-dev">
+                        <i class="ion-social-linkedin" aria-hidden="true"></i>
+                      </a>
                     </li>
                     <li class="social" title="GitHub">
-                        <a target="_blank" href="https://github.com/BRodriguez90?tab=repositories">
-                          <i class="ion-social-github" aria-hidden="true"></i>
-                        </a>
+                      <a target="_blank" href="https://github.com/BRodriguez90?tab=repositories">
+                        <i class="ion-social-github" aria-hidden="true"></i>
+                      </a>
                     </li>
                     <li class="social" title="Facebook">
-                        <a target="_blank" href="https://www.facebook.com/benrojr">
-                          <i class="ion-social-facebook" aria-hidden="true"></i>
-                        </a>
+                      <a target="_blank" href="https://www.facebook.com/benrojr">
+                        <i class="ion-social-facebook" aria-hidden="true"></i>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -380,12 +430,19 @@
         </div>
       </div>
     </section>
-   
-  </main>
 
-  <div class="footer text-center">
-    <p> Designed with ♥ by Ben Rodriguez</p>
-  </div>
+  </main>
+  <footer>
+    <div class="footer text-center">
+      <p> Designed with ♥ by Ben Rodriguez</p>
+      <div>Icons made by
+        <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+          target="_blank">CC 3.0 BY</a>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- Google Analytics -->
@@ -418,6 +475,7 @@
   <script src="/bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
   <script src="/bower_components/chartist/dist/chartist.min.js"></script>
   <script src="/bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+  <script src="/bower_components/particles.js/particles.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -437,6 +495,7 @@
 
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
+  <script src="scripts/particle.js"></script>
   <!-- endbuild -->
 </body>
 

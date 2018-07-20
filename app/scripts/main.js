@@ -3,10 +3,13 @@ $(function() {
         effect: 'fadeIn' 
         } 
     });*/
+    const $navbutton = $('#nav-button');
+    const $mobNavUl = $('nav#mobile-nav ul');
+
     let i = 0;
     const txt = 'I design things up and code them down.'; //Text
     let speed = 65; //Duration
-    
+  
     function typeWriter() {
       if (i < txt.length) {
         document.getElementById('sub-p').innerHTML += txt.charAt(i);
@@ -14,23 +17,24 @@ $(function() {
         setTimeout(typeWriter, speed);
       }
     }
+    
     $('.tags li').addClass('s_tags');
 
     $('.nav-wrap').hover(function(){
       $('.s-div').toggleClass('slide');
     });
 
-    $('#nav-button').click(function() {
-        $('#nav-button').toggleClass('clicked');
+    $navbutton.click(function() {
+        $navbutton.toggleClass('clicked');
         $('#nav-button.clicked:focus').css('outline','none');
        // $('.line1,.line2,.line3').toggleClass('line-tog');
-       $('nav#mobile-nav ul').slideToggle(250);
+       $mobNavUl.slideToggle(250);
        //$('nav#mobile-nav ul').toggleClass('show-ul');
     });
 
     $('nav#mobile-nav li a').click(function(){
-      $('#nav-button').toggleClass('clicked');
-      $('nav#mobile-nav ul').slideToggle(250);
+      $navbutton.toggleClass('clicked');
+      $mobNavUl.slideToggle(250);
     });
 
     

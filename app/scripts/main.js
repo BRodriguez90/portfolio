@@ -1,8 +1,5 @@
 $(function() {
-    /*$('.my-intro').textillate({ in: { 
-        effect: 'fadeIn' 
-        } 
-    });*/
+
     const $navbutton = $('#nav-button');
     const $mobNavUl = $('nav#mobile-nav ul');
 
@@ -74,7 +71,6 @@ $(function() {
         {meta:'Working on it', value:5},
         {meta:'Working on it', value:5},
         {meta:'Not bad', value:15}
-        /*40, 40, 20, 20, 5, 5, 15]*/
     ],
    
   }, {
